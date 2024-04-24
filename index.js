@@ -23,7 +23,7 @@ app.use( express.json() );
 // app.use('/api/events', require('./routes/events') );
 
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
 // Escuchar peticiones
 app.listen( PORT, () => {
