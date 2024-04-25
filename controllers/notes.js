@@ -1,10 +1,14 @@
 const { response } = require('express');
 const Note = require('../models/Note');
 
+const noteListMock = require('../mocks/notes');
+
+
 const getNotes = async( req, res = response ) => {
 
-    const notes = await Note.find()
-                                .populate('user','name');
+    // const notes = await Note.find()
+    //                             .populate('user','name');
+    const notes = await noteListMock;
 
     res.json({
         ok: true,
