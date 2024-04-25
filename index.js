@@ -20,7 +20,7 @@ app.use( express.json() );
 
 // Rutas
 // app.use('/api/auth', require('./routes/auth') );
-// app.use('/api/events', require('./routes/events') );
+app.use('/api/notes', require('./routes/notes') );
 
 
 const PORT = process.env.PORT || 4000;
